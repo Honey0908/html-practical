@@ -13,7 +13,6 @@
     <header>
         <nav id="navbar">
             <ul id="navbar-items">
-                <div id="navbar-half-left">
                     <li id="navbar-item-logo">
                         <img id="nav-logo-img" src="images/logo.png" alt="FlipKart LOGO" width="75px">
                         <div><span style="color:wheat">Explore</span><span style="color: yellow;">Plus</span></div>
@@ -21,20 +20,22 @@
                     <li id="navbar-item-searchbar">
                         <form action="#" id="nav-form">
                             <input type="text" placeholder="search for products,brands and more">
-                            <button type="submit">
-                                <i class="fa-solid fa-magnifying-glass"></i>
+                            <button class="btn" type="submit">
+                                <i style="color:#2874f0" class="fa-solid fa-magnifying-glass"></i>
                             </button>
                         </form>
                     </li>
-                </div>
-                <div class="navbar-half-right">
-
                     <li id="navbar-item-login">
-                        <button>Login</button>
+                        <button class="btn">Login</button>
                     </li>
-                    <li id="navbar-item-more">More</li>
-                    <li id="navbar-item-cart">Cart</li>
-                </div>
+                    <li id="navbar-item-more">
+                        <span>
+                            More
+                        </span> 
+                        <i class="fa-sharp fa-solid fa-angle-down"></i>
+                    </li>
+                    <li id="navbar-item-cart"><span>Cart</span><i class="fa-solid fa-cart-shopping"></i> </li>
+            
             </ul>
         </nav>
     </header>

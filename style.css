@@ -1,7 +1,21 @@
 *{
     margin: 0;
     padding: 0;
+    font-family: "calibiri","Arial";
+    font-weight: 500;
+    box-sizing: border-box;
 }
+i{
+    padding: 5px;
+}
+
+.btn{
+  padding: 7px 10px;
+  background-color: white;
+  border: none;
+  font-size: 14px;
+}
+
 #navbar{
     background-color: #2874f0;
     height: 56px;
@@ -17,13 +31,8 @@
     list-style: none;
 }
 #navbar-item-logo{
-    width: 20%;
-    text-align: right;
-    padding-right: 10vh;
-}
-
-#navbar-item-searchbar{
-    width: 80%;
+    float:right;
+    margin-right: 2vh;
 }
 
 #nav-form{
@@ -34,28 +43,36 @@
     flex-direction: row;
     min-width: 304px;
 }
+#navbar-item-searchbar{
+    width: 95vh;
+}
+
 #nav-form input{
     font-size: 14px;
     width: 100%;
-    height: 100%;
     padding: 0 16px;
+    border: none;
 }
-#navbar-half-left{
-    flex: 1.5;
-    display: flex;
-    flex-direction: row;
-    /* justify-content: space-between; */
+#nav-form button{
+    background-color: white;
+    border: none;
+    height: 100%;
+    box-sizing: border-box;
 }
-.navbar-half-right{
-    flex: 1;
-    display: flex;
-    flex-direction: row;
-    justify-content: end;
-    align-items: center;
+
+#navbar-item-login{
+    margin-left: 25vh;
+    margin-right: 2rem;
 }
-.navbar-half-right li{
-    margin: 0 30vh;
-}
+
 #navbar-item-login button{
     padding: 7px 40px;
+    color: #2874f0;
+    font-weight: bold;
+}
+
+#navbar-item-more, #navbar-item-cart{
+    color: white;
+    margin: 15px;
+
 }
